@@ -1,0 +1,17 @@
+<form action="" class="table">
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Gebuchte Flugnummern von </th>
+            </tr>
+        </thead>
+
+        <tbody *ngFor="let flight of flights">
+            <tr *ngIf="isFlightVisible(flight)">
+                <td>{{flight.flightNr}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</form>

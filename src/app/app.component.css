@@ -1,0 +1,32 @@
+
+
+body{
+    margin:1%;
+    
+    
+}
+
+.container2{
+    width:70%;
+    float:left;
+    overflow:hidden;
+    overflow-y: scroll;
+    max-height: 800px;
+  
+}
+
+.container3{
+  
+    width:30%;
+    float:right;
+    overflow:hidden;
+    overflow-y: scroll;
+    max-height: 800px;
+   
+}
+
+
+
+.form-control{
+    width: 30%;
+}

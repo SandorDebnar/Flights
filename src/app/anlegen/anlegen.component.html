@@ -1,0 +1,42 @@
+<form action="" class="form1">
+        <div class="">
+            <label for="" class="mr-1">Id:</label>
+            <input class="form mr-2" name="id" [(ngModel)]="newCustomer.id" type="text">
+        </div>
+
+        <div class="">
+            <label for="" class="mr-1">Firstname:</label>
+            <input class="form mr-2" name="firstname" [(ngModel)]="newCustomer.firstname" type="text">
+        </div>
+
+        <div class="">
+            <label for="" class="mr-1">Lastname:</label>
+            <input class="form mr-2" name="lastname" [(ngModel)]="newCustomer.lastname" type="text">
+        </div>
+
+        <div class="">
+            <label for="" class="mr-1">Gender:</label>
+            <input class="form mr-2" name="gender" [(ngModel)]="newCustomer.gender" type="text">
+        </div>
+
+        <div>
+            <label for="" class="mr-1">Email:</label>
+            <input class="form mr-2" name="email" [(ngModel)]="newCustomer.email" type="text">
+        </div>
+
+        <div>
+            <label for="" class="mr-1">Country:</label>
+            <input class="form mr-2" name="country" [(ngModel)]="newCustomer.country" type="text">
+        </div>
+
+        <div>
+            <label for="" class="mr-1">Age:</label>
+            <input class="form mr-2" name="age" [(ngModel)]="newCustomer.age" type="text">
+        </div>
+
+        <div>
+            <button class="btn btn-success mr-2" (click)="createCustomer()" [disabled]="isAktiv()"
+                [style.backgroundColor]=" isAktiv() ? 'grey':''">Anlegen</button>
+            <button class="btn btn-danger " (click)="cancelCreate()">Zurück</button>
+        </div>
+</form>
